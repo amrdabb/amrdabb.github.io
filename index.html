@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,8 +16,9 @@
             text-align: center;
             font-family: Arial, sans-serif;
             color: #fff;
-            background: url('image02.jpg') no-repeat center center;
+            background: url('path/to/your/image.jpg') no-repeat center center;
             background-size: cover;
+            position: relative;
         }
         .container {
             z-index: 1;
@@ -43,13 +44,28 @@
             background-color: #fff;
             color: #000;
         }
+        .contact-info {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2em;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!--<div class="logo">Weavers by Khamis</div>
-        <div class="coming-soon">Coming Soon...</div>-->
+        <div class="logo">Weavers by Khamis</div>
+        <div class="coming-soon">Coming Soon...</div>
+        <a href="contact.html" class="contact-us">Contact Us</a>
     </div>
-    <footer style="text-align: center; margin-top 40px;"><p style="color: white;">Contact us at: <a href="mailto:info@weaversbykhamis.com">info@weaversbykhamis.com</a></p></footer>
+    <div class="contact-info">
+        <p>Email: your-email@example.com</p>
+        <p>Factories: Third Industrial Zone, Southwest Sector, Plots B21/B26, 10th of Ramadan City, Arab Republic of Egypt, Postal Code 44916</p>
+    </div>
 </body>
 </html>
