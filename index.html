@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon - Weavers by Khamis</title>
     <style>
+
         body, html {
             margin: 0;
             padding: 0;
@@ -20,17 +21,21 @@
             background-size: cover;
             position: relative;
         }
+
         .container {
             z-index: 1;
         }
+
         .logo {
             font-size: 3em;
             margin-bottom: 20px;
         }
+
         .coming-soon {
             font-size: 2em;
             margin-bottom: 40px;
         }
+
         .contact-us {
             font-size: 1.5em;
             text-decoration: none;
@@ -40,10 +45,12 @@
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s;
         }
-        .contact-us:hover {
-            background-color: #fff;
-            color: #000;
-        }
+
+            .contact-us:hover {
+                background-color: #fff;
+                color: #000;
+            }
+
         .contact-info {
             position: absolute;
             bottom: 5%;
@@ -54,6 +61,31 @@
             background-color: rgba(0, 0, 0, 0.7);
             padding: 15px;
             border-radius: 5px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+            .contact-info p {
+                margin: 10px 0;
+            }
+
+            .contact-info a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                .contact-info a:hover {
+                    text-decoration: none;
+                    color: #ccc;
+                }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .contact-info {
+                font-size: 1em;
+                bottom: 3%;
+            }
         }
     </style>
 </head>
@@ -61,7 +93,7 @@
     <div class="container">
     </div>
     <div class="contact-info">
-        <p style="color: white;">Contact us at: <a href="mailto:info@weaversbykhamis.com">info@weaversbykhamis.com</a></p>
+        <p>Contact us at: <a href="mailto:info@weaversbykhamis.com">info@weaversbykhamis.com</a></p>
         <p>Factories: Third Industrial Zone, Southwest Sector, Plots B21/B26, 10th of Ramadan City, Arab Republic of Egypt, Postal Code 44916</p>
     </div>
 </body>
